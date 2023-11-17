@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    font-family: "Red Hat Display", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Pale-blue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+.nueva-clase{
+    background-color: white;
+    width: 400px;
+    border-radius: 1rem;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.contenido{
+    padding: 1.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nuevo-titulo{ 
+    color: var(--Desaturated-blue);
+}
+
+.nuevo-parrafo{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.nuevo-plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.nuevo-plan div{
+    display: flex;
+    gap: .5rem;
+}
+
+.informacion-plan{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.informacion-plan b{
+    color: var(--Dark-blue);
+}
+
+.informacion-plan span{
+    color: var(--Desaturated-blue);
+}
+
+.nuevo-link{
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nuevo-link:hover{
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.nuevos-botones{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.nuevos-botones button{
+    padding: .7rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.BotonPago{
+    background-color: var(--Bright-blue);
+    color: white;
+}
+
+.BotonPago:hover{
+    opacity: 75%;
+}
+
+.BotonCancelar{ 
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    background-color: white;
+}
+
+.BotonCancelar:hover{
+    color: var(--Dark-blue);
+}
+
+@media screen and (max-width: 500px){
+
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+
+    .nueva-clase{
+        width: 360px;
+    }
+    
+}
